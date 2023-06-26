@@ -1058,9 +1058,18 @@ Social Color
     color: #3c73df;
 }
 
+.linkedin-color {
+    color: #0e76a8;
+}
+
 .twitter-color {
     color: #1ea2f2;
 }
+
+a .twitter-color {
+    color: #1ea2f2;
+}
+
 
 .instagram-color {
     color: #9361fa;

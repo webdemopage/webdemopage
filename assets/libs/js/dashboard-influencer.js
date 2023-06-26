@@ -5,10 +5,10 @@ $(function() {
     // ============================================================== 
 
     Morris.Donut({
-        element: 'gender_donut',
+        element: 'type_donut',
         data: [
-            { value: 60, label: 'Female' },
-            { value: 40, label: 'Male' }
+            { value: 80, label: 'ST' },
+            { value: 20, label: 'LT' }
 
         ],
 
@@ -32,9 +32,9 @@ $(function() {
         type: 'horizontalBar',
 
         data: {
-            labels: ["US", "Brazil", "Canada", "UK", "Australia", "India", "China"],
+            labels: ["South Brisbane", "Coomera", "Toowong", "Bowen Hills", "Parkwood", "Sydney", "Melbourne"],
             datasets: [{
-                label: 'Country',
+                label: 'City',
                 data: [2800, 24000, 19000, 17000, 14000, 10000, 7000],
                 backgroundColor: "rgba(89, 105, 255, 1)",
 
