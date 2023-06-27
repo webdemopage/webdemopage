@@ -12,6 +12,8 @@
     <link href="../assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/libs/css/style.css">
     <link rel="stylesheet" href="../assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
+    <link rel="stylesheet" href="../assets/vendor/datepicker/tempusdominus-bootstrap-4.css" />
+    <link rel="stylesheet" href="../assets/vendor/inputmask/css/inputmask.css" />
 </head>
 
 <body>
@@ -19,10 +21,10 @@
     <!-- main wrapper -->
     <!-- ============================================================== -->
     <div class="dashboard-main-wrapper">
-         <!-- ============================================================== -->
+        <!-- ============================================================== -->
         <!-- navbar -->
         <!-- ============================================================== -->
-         <div class="dashboard-header">
+        <div class="dashboard-header">
             <nav class="navbar navbar-expand-lg bg-white fixed-top">
                 <a class="navbar-brand" href="../index.html">Airtrip</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -96,7 +98,7 @@
         <!-- ============================================================== -->
         <!-- left sidebar -->
         <!-- ============================================================== -->
-      <div class="nav-left-sidebar sidebar-dark">
+        <div class="nav-left-sidebar sidebar-dark">
             <div class="menu-list">
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <a class="d-xl-none d-lg-none" href="../index.html">Dashboard</a>
@@ -113,10 +115,10 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fas fa-fw fa-chart-pie"></i>Properties</a>
-                                <div id="submenu-1" class="collapse submenu show" style="">
+                                <div id="submenu-1" class="collapse submenu" style="">
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link active" href="property-list.html">Property list</a>
+                                            <a class="nav-link" href="property-list.html">Property list</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="add-property.html">Add property</a>
@@ -135,13 +137,13 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-2" aria-controls="submenu-2"><i class="fas fa-fw fa-user"></i>Users</a>
-                                <div id="submenu-2" class="collapse submenu" style="">
+                                <div id="submenu-2" class="collapse submenu show" style="">
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
                                             <a class="nav-link" href="user-list.html">User list</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="add-user.html">Add user</a>
+                                            <a class="nav-link active" href="add-user.html">Add user</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -176,70 +178,66 @@
         <div class="dashboard-wrapper">
             <div class="container-fluid dashboard-content">
                 <div class="row">
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                            <div class="page-header">
-                                <h2 class="pageheader-title">My Properties</h2>
+                    <div class="col-xl-10">
+                        <!-- ============================================================== -->
+                        <!-- pageheader  -->
+                        <!-- ============================================================== -->
+                        <div class="row">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <div class="page-header" id="top">
+                                    <h2 class="pageheader-title">Add User (Admin only)</h2>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                <div class="row">
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <!-- ============================================================== -->
+                        <!-- end pageheader  -->
+                        <!-- ============================================================== -->
+                        <!-- ============================================================== -->
+                        <!-- basic form  -->
+                        <!-- ============================================================== -->
                         <div class="row">
-                            <!-- ============================================================== -->
-                            <!-- properties   -->
-                            <!-- ============================================================== -->
-                            <div class="col-lg-12">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                 <div class="card">
-                                    <div class="campaign-table table-responsive">
-                                        <table class="table">
-                                            <thead>
-                                                <tr class="border-0">
-                                                    <th class="border-0">Property Address</th>
-                                                    <th class="border-0">Rental Type</th>
-                                                    <th class="border-0">Commission (Current Month)</th>
-                                                    <th class="border-0">Owner</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>1 Greenwood Ct, Parkwood, QLD 4214</td>
-                                                    <td>Short term</td>
-                                                    <td>$1200</td>
-                                                    <td>James Cook</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3/28 Folkes Cl, Bellbird Park QLD 4300</td>
-                                                    <td>Short term</td>
-                                                    <td>$1100</td>
-                                                    <td>William Thomson</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>10808/16 Edmondstone St, South Brisbane, QLD 4101</td>
-                                                    <td>Long term</td>
-                                                    <td>$500</td>
-                                                    <td>Georgie Henley</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>10 Garden Road Coomera, QLD 4209</td>
-                                                    <td>Short term</td>
-                                                    <td>$900</td>
-                                                    <td>Lucy Hawking</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>16/176 Nottingham Rd, Calamvale, QLD 4116</td>
-                                                    <td>Long term</td>
-                                                    <td>$1150</td>
-                                                    <td>Anne Conway</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                    <div class="card-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="inputText3" class="col-form-label">First Name</label>
+                                                <input id="inputText3" type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputText3" class="col-form-label">Last Name</label>
+                                                <input id="inputText3" type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="input-select">Partner Type</label>
+                                                <select class="form-control" id="input-select">
+                                                    <option>Agent</option>
+                                                    <option>Referral</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputEmail">Partner's Email Address</label>
+                                                <input id="inputEmail" type="email" placeholder="name@example.com" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputText3" class="col-form-label">Partner's ABN/License, etc.</label>
+                                                <input id="inputText3" type="text" class="form-control">
+                                            </div>
+                                            <div class="col-sm-6 pl-0">
+                                                <p class="text-right">
+                                                    <button type="submit" class="btn btn-space btn-primary">Submit</button>
+                                                    <button class="btn btn-space btn-secondary">Cancel</button>
+                                                </p>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
-                            <!-- ============================================================== -->
-                            <!-- end properties   -->
-                            <!-- ============================================================== -->
                         </div>
+                        <!-- ============================================================== -->
+                        <!-- end basic form  -->
+                        <!-- ============================================================== -->
+                        
                     </div>
                 </div>
             </div>
@@ -253,6 +251,41 @@
     <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
     <script src="../assets/vendor/slimscroll/jquery.slimscroll.js"></script>
     <script src="../assets/libs/js/main-js.js"></script>
+    <script src="../assets/vendor/inputmask/js/jquery.inputmask.bundle.js"></script>
+    <script>
+    $(function(e) {
+        "use strict";
+        $(".date-inputmask").inputmask("dd/mm/yyyy"),
+            $(".phone-inputmask").inputmask("(999) 999-9999"),
+            $(".international-inputmask").inputmask("+9(999)999-9999"),
+            $(".xphone-inputmask").inputmask("(999) 999-9999 / x999999"),
+            $(".purchase-inputmask").inputmask("aaaa 9999-****"),
+            $(".cc-inputmask").inputmask("9999 9999 9999 9999"),
+            $(".ssn-inputmask").inputmask("999-99-9999"),
+            $(".isbn-inputmask").inputmask("999-99-999-9999-9"),
+            $(".currency-inputmask").inputmask("$9999"),
+            $(".percentage-inputmask").inputmask("99%"),
+            $(".decimal-inputmask").inputmask({
+                alias: "decimal",
+                radixPoint: "."
+            }),
+
+            $(".email-inputmask").inputmask({
+                mask: "*{1,20}[.*{1,20}][.*{1,20}][.*{1,20}]@*{1,20}[*{2,6}][*{1,2}].*{1,}[.*{2,6}][.*{1,2}]",
+                greedy: !1,
+                onBeforePaste: function(n, a) {
+                    return (e = e.toLowerCase()).replace("mailto:", "")
+                },
+                definitions: {
+                    "*": {
+                        validator: "[0-9A-Za-z!#$%&'*+/=?^_`{|}~/-]",
+                        cardinality: 1,
+                        casing: "lower"
+                    }
+                }
+            })
+    });
+    </script>
 </body>
  
 </html>
